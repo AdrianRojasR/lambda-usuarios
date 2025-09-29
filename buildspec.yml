@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.9
+    commands:
+      - echo "No hay dependencias externas"
+  build:
+    commands:
+      - zip -r function.zip .
+artifacts:
+  files:
+    - function.zip
