@@ -31,7 +31,7 @@ def lambda_handler(event, context):
             logging.error(f"Usuario no encontrado: {data['id']}")
             return {
                 'statusCode': 404,
-                'body': json.dumps({'error': 'Usuario no encontrado'})
+                'body': json.dumps({'error': 'Usuario no encontrado en la tabla usuarios'})
             }
         logging.info(f"usuario: {usuario}")  
         return {
